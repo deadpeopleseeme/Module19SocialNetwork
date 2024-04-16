@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\code\\SocialNetwork\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|e:\\code\\socialnetwork\\dal\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:dal\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|E:\\code\\SocialNetwork\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|E:\\code\\SocialNetwork\\dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|E:\\code\\SocialNetwork\\dal\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:dal\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|e:\\code\\socialnetwork\\dal\\repositories\\friendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:dal\\repositories\\friendrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|e:\\code\\socialnetwork\\bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|e:\\code\\socialnetwork\\bll\\models\\userregistrationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29EB7D35-9F98-4189-8D3F-5C32DABE39C9}|SocialNetwork.csproj|solutionrelative:bll\\models\\userregistrationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\DAL\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "DAL\\Entities\\UserEntity.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\DAL\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "DAL\\Entities\\UserEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T19:06:19.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FriendRepository.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\DAL\\Repositories\\FriendRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\FriendRepository.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\DAL\\Repositories\\FriendRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\FriendRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T19:02:00.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRegistrationData.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\BLL\\Models\\UserRegistrationData.cs",
+              "RelativeDocumentMoniker": "BLL\\Models\\UserRegistrationData.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\BLL\\Models\\UserRegistrationData.cs",
+              "RelativeToolTip": "BLL\\Models\\UserRegistrationData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T16:55:15.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\BLL\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\UserService.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\BLL\\Services\\UserService.cs",
+              "RelativeToolTip": "BLL\\Services\\UserService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T16:54:15.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessageRepository.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\DAL\\Repositories\\MessageRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\MessageRepository.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\DAL\\Repositories\\MessageRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\MessageRepository.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAArwCMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T11:08:37.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\DAL\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\DAL\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "DAL\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAABCwCgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T11:06:27.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\code\\SocialNetwork\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\code\\SocialNetwork\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwCkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T10:55:37.255Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

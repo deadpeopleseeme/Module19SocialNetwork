@@ -1,0 +1,13 @@
+E:\code\SocialNetwork\obj\Debug\SocialNetwork.csproj.AssemblyReference.cache
+E:\code\SocialNetwork\obj\Debug\SocialNetwork.csproj.CoreCompileInputs.cache
+E:\code\SocialNetwork\bin\Debug\DAL\DB\social_network_bd.db
+E:\code\SocialNetwork\bin\Debug\SocialNetwork.exe.config
+E:\code\SocialNetwork\bin\Debug\SocialNetwork.exe
+E:\code\SocialNetwork\bin\Debug\SocialNetwork.pdb
+E:\code\SocialNetwork\bin\Debug\Dapper.dll
+E:\code\SocialNetwork\bin\Debug\System.Data.SQLite.dll
+E:\code\SocialNetwork\bin\Debug\Dapper.xml
+E:\code\SocialNetwork\bin\Debug\System.Data.SQLite.xml
+E:\code\SocialNetwork\obj\Debug\SocialNe.364C5A64.Up2Date
+E:\code\SocialNetwork\obj\Debug\SocialNetwork.exe
+E:\code\SocialNetwork\obj\Debug\SocialNetwork.pdb
