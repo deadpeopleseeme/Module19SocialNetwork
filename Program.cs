@@ -14,16 +14,16 @@ namespace SocialNetwork
 
             while(true)
             {
-                Console.WriteLine("enter your name: ");
+                Console.WriteLine("\nenter your name: ");
                 string _firstName = Console.ReadLine();
 
-                Console.WriteLine("enter your surname: ");
+                Console.WriteLine("\nenter your surname: ");
                 string _lastName = Console.ReadLine();
 
-                Console.WriteLine("enter your password, min length is 8symb: ");
+                Console.WriteLine("\nenter your password, min length is 8symb: ");
                 string _password = Console.ReadLine();
 
-                Console.WriteLine("enter your email address: ");
+                Console.WriteLine("\nenter your email address: ");
                 string _email = Console.ReadLine();
 
                 var userRegData = new UserRegistrationData(_firstName, _lastName, _password, _email);
@@ -31,16 +31,18 @@ namespace SocialNetwork
                 try
                 {
                     userService.Register(userRegData);
-                    Console.WriteLine("success! registration done");
+                    Console.WriteLine("\nsuccess! registration done");
                 }
                 catch (ArgumentNullException)
                 {
-                    Console.WriteLine("some of data you've entered is incorrect, try one more time! ");
+                    Console.WriteLine("\nsome of data you've entered is incorrect, try one more time! ");
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
+
+                Console.ReadKey();
             }
         }
     }
