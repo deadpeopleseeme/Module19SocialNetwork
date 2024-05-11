@@ -52,7 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Exceptions\UserNotFoundException.cs" />
+    <Compile Include="BLL\Exceptions\WrongPasswordException.cs" />
+    <Compile Include="BLL\Models\User.cs" />
+    <Compile Include="BLL\Models\UserAuthenticationData.cs" />
     <Compile Include="BLL\Models\UserRegistrationData.cs" />
+    <Compile Include="BLL\Services\MessageService.cs" />
     <Compile Include="BLL\Services\UserService.cs" />
     <Compile Include="DAL\Entities\FriendEntity.cs" />
     <Compile Include="DAL\Entities\MessageEntity.cs" />
@@ -61,6 +66,17 @@
     <Compile Include="DAL\Repositories\FriendRepository.cs" />
     <Compile Include="DAL\Repositories\MessageRepository.cs" />
     <Compile Include="DAL\Repositories\UserRepository.cs" />
+    <Compile Include="PLL\Helpers\AlertMessage.cs" />
+    <Compile Include="PLL\Helpers\SuccessMessage.cs" />
+    <Compile Include="PLL\Views\AuthenticationView.cs" />
+    <Compile Include="PLL\Views\MainView.cs" />
+    <Compile Include="PLL\Views\MessageSendingView.cs" />
+    <Compile Include="PLL\Views\RegistrationView.cs" />
+    <Compile Include="PLL\Views\UserDataUpdateView.cs" />
+    <Compile Include="PLL\Views\UserIncomingMessageView.cs" />
+    <Compile Include="PLL\Views\UserInfoView.cs" />
+    <Compile Include="PLL\Views\UserMenuView.cs" />
+    <Compile Include="PLL\Views\UserOutcomingMessageView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

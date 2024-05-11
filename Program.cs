@@ -1,48 +1,42 @@
-﻿using SocialNetwork.BLL.Models;
+﻿using SocialNetwork.BLL.Exceptions;
+using SocialNetwork.BLL.Models;
 using SocialNetwork.BLL.Services;
+using SocialNetwork.PLL.Views;
 using System;
-using System.Linq.Expressions;
 
 namespace SocialNetwork
 {
-    internal class Program
-    {
-        public static UserService userService= new UserService();  
+    class Program
+    {   
+        public static MessageService messageService;
+        public static UserService userService;
+        public static AuthenticationView authenticationView;
+        public static MainView mainView;
+        public static MessageSendingView messageSendingView;
+        public static RegistrationView registrationView;
+        public static UserDataUpdateView userDataUpdateView;
+        public static UserIncomingMessageView userIncomingMessageView;
+        public static UserInfoView userInfoView;
+        public static UserMenuView userMenuView;
+        public static UserOutcomingMessageView userOutcomingMessageView;
+
         static void Main(string[] args)
         {
-            Console.WriteLine("WELCOME TO SUPA DUPA SOCIAL NETWORK");
+            messageService = new MessageService();
+            userService = new UserService();
+            authenticationView = new AuthenticationView(userService);
+            mainView = new MainView();
+            messageSendingView = new MessageSendingView();
+            registrationView = new RegistrationView();
+            userDataUpdateView = new UserDataUpdateView();
+            userIncomingMessageView = new UserIncomingMessageView();
+            userInfoView = new UserInfoView();
+            userMenuView = new UserMenuView(userService);
+            userOutcomingMessageView = new UserOutgoingMessageView();
 
-            while(true)
+            while (true)
             {
-                Console.WriteLine("\nenter your name: ");
-                string _firstName = Console.ReadLine();
-
-                Console.WriteLine("\nenter your surname: ");
-                string _lastName = Console.ReadLine();
-
-                Console.WriteLine("\nenter your password, min length is 8symb: ");
-                string _password = Console.ReadLine();
-
-                Console.WriteLine("\nenter your email address: ");
-                string _email = Console.ReadLine();
-
-                var userRegData = new UserRegistrationData(_firstName, _lastName, _password, _email);
-
-                try
-                {
-                    userService.Register(userRegData);
-                    Console.WriteLine("\nsuccess! registration done");
-                }
-                catch (ArgumentNullException)
-                {
-                    Console.WriteLine("\nsome of data you've entered is incorrect, try one more time! ");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-
-                Console.ReadKey();
+                mainView.Show();
             }
         }
     }

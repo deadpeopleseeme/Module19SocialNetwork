@@ -15,5 +15,9 @@
             Password = password;
             Email = email;
         }
+
+        public UserRegistrationData()
+        {
+        }
     }
 }
