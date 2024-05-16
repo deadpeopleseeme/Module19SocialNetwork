@@ -26,13 +26,13 @@ namespace SocialNetwork
             userService = new UserService();
             authenticationView = new AuthenticationView(userService);
             mainView = new MainView();
-            messageSendingView = new MessageSendingView();
-            registrationView = new RegistrationView();
+            messageSendingView = new MessageSendingView(messageService, userService);
+            registrationView = new RegistrationView(userService);
             userDataUpdateView = new UserDataUpdateView();
             userIncomingMessageView = new UserIncomingMessageView();
             userInfoView = new UserInfoView();
             userMenuView = new UserMenuView(userService);
-            userOutcomingMessageView = new UserOutgoingMessageView();
+            userOutcomingMessageView = new UserOutcomingMessageView();
 
             while (true)
             {

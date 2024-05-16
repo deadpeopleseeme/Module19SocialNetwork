@@ -3,15 +3,26 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SocialNetwork.PLL.Views
 {
-    internal class UserIncomingMessageView
+    public class UserIncomingMessageView
     {
-        internal void Show(User user)
+        public void Show(IEnumerable<Message> incomingMessages)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Входящие сообщения");
+
+
+            if (incomingMessages.Count() == 0)
+            {
+                Console.WriteLine("Входящих сообщения нет");
+                return;
+            }
+
+            incomingMessages.ToList().ForEach(message =>
+            {
+                Console.WriteLine("От кого: {0}. Текст сообщения: {1}", message.SenderEmail, message.Content);
+            });
         }
     }
 }

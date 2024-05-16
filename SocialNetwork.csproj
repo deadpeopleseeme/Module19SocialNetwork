@@ -54,9 +54,12 @@
   <ItemGroup>
     <Compile Include="BLL\Exceptions\UserNotFoundException.cs" />
     <Compile Include="BLL\Exceptions\WrongPasswordException.cs" />
+    <Compile Include="BLL\Models\Message.cs" />
+    <Compile Include="BLL\Models\MessageSendingData.cs" />
     <Compile Include="BLL\Models\User.cs" />
     <Compile Include="BLL\Models\UserAuthenticationData.cs" />
     <Compile Include="BLL\Models\UserRegistrationData.cs" />
+    <Compile Include="BLL\Services\FriendService.cs" />
     <Compile Include="BLL\Services\MessageService.cs" />
     <Compile Include="BLL\Services\UserService.cs" />
     <Compile Include="DAL\Entities\FriendEntity.cs" />
