@@ -52,8 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Exceptions\CantBefriendYourselfException.cs" />
+    <Compile Include="BLL\Exceptions\UserIsAlreadyFriendlistedException.cs" />
     <Compile Include="BLL\Exceptions\UserNotFoundException.cs" />
     <Compile Include="BLL\Exceptions\WrongPasswordException.cs" />
+    <Compile Include="BLL\Models\Friend.cs" />
+    <Compile Include="BLL\Models\FriendAddingData.cs" />
     <Compile Include="BLL\Models\Message.cs" />
     <Compile Include="BLL\Models\MessageSendingData.cs" />
     <Compile Include="BLL\Models\User.cs" />
@@ -72,6 +76,7 @@
     <Compile Include="PLL\Helpers\AlertMessage.cs" />
     <Compile Include="PLL\Helpers\SuccessMessage.cs" />
     <Compile Include="PLL\Views\AuthenticationView.cs" />
+    <Compile Include="PLL\Views\FriendAddView.cs" />
     <Compile Include="PLL\Views\MainView.cs" />
     <Compile Include="PLL\Views\MessageSendingView.cs" />
     <Compile Include="PLL\Views\RegistrationView.cs" />

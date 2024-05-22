@@ -5,13 +5,10 @@ using SocialNetwork.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SocialNetwork.BLL.Services
 {
-    internal class MessageService
+    public class MessageService
     {
         IMessageRepository messageRepository;
         IUserRepository userRepository;
@@ -35,10 +32,10 @@ namespace SocialNetwork.BLL.Services
             return messages;
         }
 
-        public IEnumerable<Message> GetOutcomingMessagesByUserId(int sendertId)
+        public IEnumerable<Message> GetOutcomingMessagesByUserId(int senderId)
         {
             var messages = new List<Message>();
-            messageRepository.FindByRecipientId(sendertId).ToList().ForEach(m =>
+            messageRepository.FindBySenderId(senderId).ToList().ForEach(m =>
             {
                 var senderUserEntity = userRepository.FindById(m.sender_id);
                 var recipentUserEntity = userRepository.FindById(m.recipient_id);

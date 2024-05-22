@@ -24,7 +24,7 @@ namespace SocialNetwork.PLL.Views
 
                 Console.WriteLine("Посмотреть информацию о профиле: введите 1");
                 Console.WriteLine("Редактировать профиль: введите 2");
-                Console.WriteLine("Добавить друзей: введите 3");
+                Console.WriteLine("Добавить или посмотреть друзей: введите 3");
                 Console.WriteLine("Написать сообщение: введите 4");
                 Console.WriteLine("Посмотреть входящие сообщения: введите 5");
                 Console.WriteLine("Посмотреть исходящие сообщения: введите 6");
@@ -41,7 +41,7 @@ namespace SocialNetwork.PLL.Views
                         Program.userDataUpdateView.Show(user);
                         break;
                     case "3":
-                        throw new NotImplementedException();
+                        Program.friendAddView.Show(user);
                         break;
                     case "4":
                         Program.messageSendingView.Show(user);

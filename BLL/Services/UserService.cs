@@ -11,26 +11,28 @@ namespace SocialNetwork.BLL.Services
 {
     public class UserService
     {
-        MessageService messageService;
-        IUserRepository userRepository;
+        public IUserRepository userRepository;
+        MessageService messageService;      
+        public FriendService friendService;
         public UserService()
         {
             userRepository = new UserRepository();
             messageService = new MessageService();
+            friendService = new FriendService();
         }
 
         public void Register(UserRegistrationData userRegistrationData)
         {
-            if (String.IsNullOrEmpty(userRegistrationData.FirstName))
+            if (string.IsNullOrEmpty(userRegistrationData.FirstName))
                 throw new ArgumentNullException();
 
-            if (String.IsNullOrEmpty(userRegistrationData.LastName))
+            if (string.IsNullOrEmpty(userRegistrationData.LastName))
                 throw new ArgumentNullException();
 
-            if (String.IsNullOrEmpty(userRegistrationData.Password))
+            if (string.IsNullOrEmpty(userRegistrationData.Password))
                 throw new ArgumentNullException();
 
-            if (String.IsNullOrEmpty(userRegistrationData.Email))
+            if (string.IsNullOrEmpty(userRegistrationData.Email))
                 throw new ArgumentNullException();
 
             if (userRegistrationData.Password.Length < 8)
@@ -50,7 +52,7 @@ namespace SocialNetwork.BLL.Services
                 email = userRegistrationData.Email
             };
 
-            if (this.userRepository.Create(userEntity) == 0)
+            if (userRepository.Create(userEntity) == 0)
                 throw new Exception();
 
         }
@@ -96,7 +98,7 @@ namespace SocialNetwork.BLL.Services
                 favorite_book = user.FavoriteBook
             };
 
-            if (this.userRepository.Update(updatableUserEntity) == 0)
+            if (userRepository.Update(updatableUserEntity) == 0)
                 throw new Exception();
         }
 
@@ -105,6 +107,8 @@ namespace SocialNetwork.BLL.Services
             var incomingMessages = messageService.GetIncomingMessagesByUserId(userEntity.id);
 
             var outgoingMessages = messageService.GetOutcomingMessagesByUserId(userEntity.id);
+
+            var friends = friendService.GetFriendsByUserId(userEntity.id);
 
             return new User(userEntity.id,
                           userEntity.firstname,
@@ -115,8 +119,9 @@ namespace SocialNetwork.BLL.Services
                           userEntity.favorite_movie,
                           userEntity.favorite_book,
                           incomingMessages,
-                          outgoingMessages
-                          );
+                          outgoingMessages,
+                          friends
+                          ) ;
         }
     }
 }
