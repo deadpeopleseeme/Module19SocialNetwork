@@ -59,8 +59,7 @@ namespace SocialNetwork.PLL.Views
                         break;
                     case "2":
                         Console.WriteLine("Список ваших друзей: ");
-                        var friends = friendService.GetFriendsByUserId(user.Id);
-                        foreach(var fr in friends)
+                        foreach(var fr in friendService.GetFriendsByUserId(user.Id))
                         { var f = userService.FindById(fr.FriendId);
                             Console.WriteLine($"{f.FirstName} {f.LastName} ");
                         }
